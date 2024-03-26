@@ -12,7 +12,7 @@ class Welcome extends StatelessWidget {
           backgroundColor: Colors.red[300],
           title: Center(
               child: Text(
-            "Welcom",
+            "Welcome",
             style: TextStyle(
                 fontWeight: FontWeight.bold, fontSize: 35, fontFamily: "font"),
           )),

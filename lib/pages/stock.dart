@@ -22,8 +22,8 @@ class Stock extends StatelessWidget {
                       image: AssetImage("assets/images/ae.jpg"),
                       fit: BoxFit.cover),
                 ),
-                accountName: Text("data"),
-                accountEmail: Text("@data"),
+                accountName: Text(""),
+                accountEmail: Text(""),
                 currentAccountPicture: CircleAvatar(
                   radius: 55,
                   backgroundImage: AssetImage("assets/images/energia.png"),
@@ -38,7 +38,7 @@ class Stock extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text("Invontaire"),
+                title: Text("Inventory"),
                 leading: Icon(Icons.inventory_outlined),
                 onTap: () {
                   Navigator.push(context,
@@ -46,7 +46,7 @@ class Stock extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text("Stock"),
+                title: Text("Stocks"),
                 leading: Icon(Icons.storage),
                 onTap: () {
                   Navigator.push(context,
@@ -75,7 +75,7 @@ class Stock extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.red[300],
           title: Text(
-            "Stock",
+            "Stocks",
             style: TextStyle(
                 fontWeight: FontWeight.w400, fontSize: 35, fontFamily: "font"),
           ),
@@ -84,7 +84,7 @@ class Stock extends StatelessWidget {
           children: [
             SizedBox(height: 30),
             Text(
-              "Reference article",
+              "Artical References ",
               style: TextStyle(fontFamily: "font", fontSize: 30),
             ),
             TextField(
@@ -94,7 +94,7 @@ class Stock extends StatelessWidget {
               height: 30,
             ),
             Text(
-              "Quantite Stock: ",
+              "Quantity stored: ",
               style: TextStyle(fontFamily: "font", fontSize: 30),
             ),
             TextField(
@@ -102,7 +102,7 @@ class Stock extends StatelessWidget {
             ),
             SizedBox(height: 30),
             Text(
-              "Quantite inventoriee :",
+              "Inventory Quantity :",
               style: TextStyle(fontFamily: "font", fontSize: 30),
             ),
             TextField(
@@ -115,7 +115,7 @@ class Stock extends StatelessWidget {
                 ElevatedButton(
                   onPressed: () {},
                   child: Text(
-                    "Valide",
+                    "Valid",
                     style: TextStyle(fontSize: 30, color: Colors.red[300]),
                   ),
                 ),
@@ -125,7 +125,7 @@ class Stock extends StatelessWidget {
                 ElevatedButton(
                   onPressed: () {},
                   child: Text(
-                    "Annuler",
+                    "Cancel",
                     style: TextStyle(fontSize: 30, color: Colors.grey[600]),
                   ),
                 ),

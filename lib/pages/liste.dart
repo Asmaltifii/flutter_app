@@ -126,7 +126,7 @@ class _ListeState extends State<Liste> {
                         },
                         
                         child: Text(
-                          'Add to Liste',
+                          'Add to List',
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 20),
                         )),

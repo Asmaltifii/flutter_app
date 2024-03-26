@@ -22,8 +22,8 @@ class Inventaire extends StatelessWidget {
                       image: AssetImage("assets/images/ae.jpg"),
                       fit: BoxFit.cover),
                 ),
-                accountName: Text("data"),
-                accountEmail: Text("@data"),
+                accountName: Text(""),
+                accountEmail: Text("@"),
                 currentAccountPicture: CircleAvatar(
                   radius: 55,
                   backgroundImage: AssetImage("assets/images/energia.png"),
@@ -38,7 +38,7 @@ class Inventaire extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text("Invontaire"),
+                title: Text("Inventory"),
                 leading: Icon(Icons.inventory_outlined),
                 onTap: () {
                   Navigator.push(context,
@@ -46,7 +46,7 @@ class Inventaire extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text("Stock"),
+                title: Text("Stocks"),
                 leading: Icon(Icons.storage),
                 onTap: () {
                   Navigator.push(context,
@@ -75,7 +75,7 @@ class Inventaire extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.red[300],
           title: Text(
-            "Invontaire",
+            "Inventory",
             style: TextStyle(
                 fontWeight: FontWeight.w400, fontSize: 35, fontFamily: "font"),
           ),
@@ -87,7 +87,7 @@ class Inventaire extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
-                "Inventaire RFID :",
+                "Inventory RFID :",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 30,
@@ -99,7 +99,7 @@ class Inventaire extends StatelessWidget {
                 width: 300,
                 child: TextField(
                   decoration: InputDecoration(
-                    hintText: "Utilisateur : ",
+                    hintText: "User : ",
                     hintStyle: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -122,7 +122,7 @@ class Inventaire extends StatelessWidget {
                 width: 300,
                 child: TextField(
                   decoration: InputDecoration(
-                    hintText: "Localisation : ",
+                    hintText: "Location : ",
                     hintStyle: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -156,7 +156,7 @@ class Inventaire extends StatelessWidget {
                               border: Border.all(color: Colors.black)),
                           alignment: Alignment.centerLeft,
                           child: Text(
-                            "Quantite",
+                            "Quantity",
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ),
@@ -186,7 +186,7 @@ class Inventaire extends StatelessWidget {
                 width: 300,
                 child: TextField(
                   decoration: InputDecoration(
-                    hintText: "Total quantité : ",
+                    hintText: "Total quantity : ",
                     hintStyle: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -195,7 +195,7 @@ class Inventaire extends StatelessWidget {
               ElevatedButton(
                 onPressed: () {},
                 child: Text(
-                  "Télécharge",
+                  "Download",
                   style: TextStyle(
                       color: Colors.red[300], fontWeight: FontWeight.bold),
                 ),
@@ -206,7 +206,7 @@ class Inventaire extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () {},
                     child: Text(
-                      "Sortir",
+                      "Exit",
                       style: TextStyle(
                           color: Colors.red[300], fontWeight: FontWeight.bold),
                     ),
@@ -215,7 +215,7 @@ class Inventaire extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () {},
                     child: Text(
-                      "Sauvegarder",
+                      "Backup",
                       style: TextStyle(
                           color: Colors.grey[900], fontWeight: FontWeight.bold),
                     ),
@@ -224,7 +224,7 @@ class Inventaire extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () {},
                     child: Text(
-                      "Ecraser",
+                      "Crush",
                       style: TextStyle(
                           color: Colors.red[300], fontWeight: FontWeight.bold),
                     ),

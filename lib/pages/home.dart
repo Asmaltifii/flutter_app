@@ -24,8 +24,8 @@ class Home extends StatelessWidget {
                       image: AssetImage("assets/images/ae.jpg"),
                       fit: BoxFit.cover),
                 ),
-                accountName: Text("data"),
-                accountEmail: Text("@data"),
+                accountName: Text(""),
+                accountEmail: Text("@"),
                 currentAccountPicture: CircleAvatar(
                   radius: 55,
                   backgroundImage: AssetImage("assets/images/energia.png"),
@@ -48,7 +48,7 @@ class Home extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text("Stock"),
+                title: Text("Stocks"),
                 leading: Icon(Icons.storage),
                 onTap: () {
                   Navigator.push(context,
@@ -66,8 +66,9 @@ class Home extends StatelessWidget {
               ListTile(
                 title: Text("Log out"),
                 leading: Icon(Icons.exit_to_app),
-                onTap: () {  Navigator.push(
-                      context, MaterialPageRoute(builder: (context) => Welcome()));
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Welcome()));
                 },
               ),
             ],

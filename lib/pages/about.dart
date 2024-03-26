@@ -21,8 +21,8 @@ class About extends StatelessWidget {
                       image: AssetImage("assets/images/ae.jpg"),
                       fit: BoxFit.cover),
                 ),
-                accountName: Text("data"),
-                accountEmail: Text("@data"),
+                accountName: Text(""),
+                accountEmail: Text(""),
                 currentAccountPicture: CircleAvatar(
                   radius: 55,
                   backgroundImage: AssetImage("assets/images/energia.png"),
@@ -37,7 +37,7 @@ class About extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text("Invontaire"),
+                title: Text("Inventory"),
                 leading: Icon(Icons.inventory_outlined),
                 onTap: () {
                   Navigator.push(context,
@@ -45,7 +45,7 @@ class About extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text("Stock"),
+                title: Text("Stocks"),
                 leading: Icon(Icons.storage),
                 onTap: () {
                   Navigator.push(context,
